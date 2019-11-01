@@ -1,0 +1,10 @@
+def countPrimes(n):
+    count = 0
+    for m in range(2, n):
+        end = int(sqrt(m))
+        for x in range(2, end + 1):
+            if m % x ==0:
+                break
+        else:
+            count +=1
+    return count
