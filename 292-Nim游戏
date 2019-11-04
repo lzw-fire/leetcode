@@ -1,0 +1,18 @@
+class Solution(object):
+    def addDigits(self, n):
+        if n < 4:
+            print('true')
+        elif n % 4 == 0:
+            print('false')
+        else:
+            print('true')
+
+
+def main():
+    n = int(input('请输入一个正整数: '))
+    solution = Solution()
+    solution.addDigits(n)
+
+
+if __name__ == '__main__':
+    main()
