@@ -1,0 +1,24 @@
+from math import sqrt
+class Solution(object):
+    def isPower0fTwo(self, n):
+        count = 0
+        while n:
+            count += n & 1
+            n >>=1
+        if count == 1:
+            print('true')
+        else:
+            print('false')
+
+
+
+def main():
+    n = int(input('请输入一个正整数: '))
+    solution = Solution()
+    solution.isPower0fTwo(n)
+
+
+
+
+if __name__ == '__main__':
+    main()
