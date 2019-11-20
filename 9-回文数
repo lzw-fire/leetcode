@@ -1,0 +1,21 @@
+class Solution(object):
+    def reverse(self, x: int):
+        y, res = abs(x), 0
+        while y != 0:
+            res = res * 10 + y % 10
+            y //= 10
+        if x == res:
+            return True
+        elif x != res:
+            return False
+
+
+
+def main():
+    n = int(input('请输入一个正整数: '))
+    solution = Solution()
+    print(solution.reverse(n))
+
+
+if __name__ == '__main__':
+    main()
